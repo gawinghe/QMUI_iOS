@@ -21,4 +21,7 @@ Pod::Spec.new do |s|
 
   s.frameworks       = 'Foundation', 'UIKit', 'CoreGraphics', 'Photos'
 
+  s.xcconfig = { 
+      'GCC_PREPROCESSOR_DEFINITIONS[config=Debug]' => '$(inherited) keyboardHeight=keyboardHeight'
+    }
 end
